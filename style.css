@@ -1,0 +1,332 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url('images/iphone-15.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+.hero-content {
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 25px;
+}
+.features {
+  background-color: white;
+  padding: 60px 20px;
+  text-align: center;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-box {
+  width: 250px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.gallery-section {
+  padding: 50px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* adjusts columns */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+.gallery-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+.pricing-section{
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 60px 20px;
+}
+.pricing-section h1{
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.pricing-section p{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.pricing-cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.card{
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  width: 280px;
+}
+.card h3{
+  margin-bottom: 10px;
+  color: #111;
+}
+.card .price{
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.card ul{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.card ul li{
+  margin: 8px 0;
+  color: #555;
+}
+.card button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0071e3;
+  font-weight: 600;
+  transition: background .0.3s ease;
+}
+.card button:hover{
+  background-color: #005665;
+}
+.card-highlighted{
+  border: 2px solid #0071e3;
+  padding: 30px 20px ;
+  width: 280px;
+  border-radius: 12px;
+}
+.card-highlighted p{
+  font-weight: 600;
+  font-size: 25px;
+}
+.card-highlighted ul{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.card-highlighted ul li{
+  margin: 8px 0;
+  color: #555;
+}
+.card-highlighted button{
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #0071e3;
+  font-weight: 600;
+  transition: background .0.3s ease;
+}
+.card-highlighted button:hover{
+  background-color: #005665;
+}
+html {
+  scroll-behavior: smooth;
+}
+.shop-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background-color: #fff;
+  text-align: center;
+}
+
+.cart-container {
+  padding: 30px 20px;
+}
+
+.cart-image {
+  width: 200px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.cart-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cart-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.shop-btn {
+  background-color: #2874f0;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+  background-color: #0f5bd4;
+}
+.footer{
+  margin-top: 15px;
+}
+.foot-panel1{
+  background-color: #37475a;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+}
+.apple-footer {
+  background-color: #f5f5f7;
+  color: #333;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.footer-column ul li {
+  font-size: 13px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #555;
+}
+
+.footer-bottom p {
+  margin: 6px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom a {
+  color: #06c;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.bottom-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
